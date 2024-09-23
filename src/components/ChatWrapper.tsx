@@ -16,11 +16,13 @@ export const ChatWrapper = ({ sessionId }: { sessionId: string }) => {
         <Messages messages={messages} />
       </div>
 
-      <form onSubmit={handleSubmit}>
+      <ChatInput />
+
+      {/* <form onSubmit={handleSubmit}>
         <input onChange={handleInputChange} type="text" value={input} />
 
         <button type="submit">Send</button>
-      </form>
+      </form> */}
     </div>
   );
 };
